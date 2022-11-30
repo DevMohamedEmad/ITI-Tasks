@@ -11,25 +11,18 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
-@media (min-width:786px) {
-    nav {
-        width: 80%;
-    }
-}
+/*Mobile Phone*/
+@media (max-width:767px) {}
 
-@media (min-width:992px) {
-    nav .container {
-        width: 80%;
-    }
-}
+/* small screens*/
+@media (min-width:786px) {}
 
-@media (min-width:1200px) {
-    nav .container {
-        width: 80%;
-    }
-}
+/* medium screens*/
+@media (min-width:992px) {}
 
-/* End Global Rules */
+/* large screens*/
+@media (min-width:1200px) {}
+
 
 /* Start Header */
 nav {
@@ -47,11 +40,10 @@ nav {
 }
 
 nav .left-nav {
-    width: 30%;
+    width: 20%;
 }
 
 nav .left-nav div {
-    padding-left: 10%;
     padding-top: 2%;
     padding-bottom: 2%;
     display: flex;
@@ -63,24 +55,23 @@ nav .left-nav div .logo {
     width: 25%;
     height: 25%;
     border-radius: 12.5%;
-    margin-right: 10%;
+    /* margin-right: 10%; */
 }
 
 nav .left-nav div h1 {
     font-size: 50px;
-    width: 75%;
-    color: white;
+    color: rgb(232, 95, 95);
     padding-left: 10px;
 }
 
 nav .right-nav {
-    width: 70%;
+    width: 80%;
     height: 100%;
     border: white;
-
 }
 
 nav .right-nav ul {
+    /* padding-top: 70px; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -97,8 +88,7 @@ nav .right-nav ul li {
     padding-top: 70px;
     height: 100%;
     list-style: none;
-    text-align: center;
-    width: 18%;
+    width: 15%;
 }
 
 nav .right-nav ul li a {
@@ -109,6 +99,27 @@ nav .right-nav ul li a {
     margin-right: 50px;
     padding-left: 10px;
     text-decoration: none;
+}
+/* medium screens*/
+@media (min-width:992px) {
+    nav .left-nav div h1 {
+        font-size: 35px;
+    }
+
+    nav .right-nav ul li a {
+        font-size: 35px;
+    }
+}
+
+/* large screens*/
+@media (min-width:1200px) {
+    nav .left-nav div h1 {
+        font-size: 50px;
+    }
+
+    nav .right-nav ul li a {
+        font-size: 50px;
+    }
 }
 
 section {
@@ -127,6 +138,10 @@ section .container {
     padding-top: 2%;
     flex-direction: row-reverse;
     align-items: center;
+}
+
+section .container div {
+    width: 100%;
 }
 
 section .container img {
@@ -153,6 +168,23 @@ section .container div button {
     font-size: 150%;
     margin-top: 20px;
     background-color: rgb(36, 36, 36);
+    margin-bottom: 10px;
+}
+
+/* medium screens*/
+@media (min-width:992px) {
+    section .container img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+/* large screens*/
+@media (min-width:1200px) {
+    section .container img {
+        width: 60%;
+        height: 50%;
+    }
 }
 
 footer {
@@ -169,12 +201,12 @@ footer .footer-top {
     margin: 5px auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer .footer-top div {
-    width: 48%;
-    margin: 2%;
-    /* border: solid black 2px; */
+    width: 45%;
+    margin: 1%;
     background-color: #eee;
     height: 400px;
     padding: 20px;
@@ -226,8 +258,107 @@ footer .footer-bottom span:hover {
 
 footer .footer-bottom span i {
     color: black;
-
 }
+
+/*Mobile Phone*/
+@media (max-width:767px) {
+    nav .left-nav div h1 {
+        font-size: 15px;
+    }
+
+    nav .right-nav ul li {
+        padding-top: 90px;
+    }
+    nav .right-nav ul li a {
+        font-size: 15px;
+    }
+    section .container img {
+        width: 50%;
+        height: 60%;
+    }
+
+    section .container div h2 {
+        font-size: 100%;
+    }
+
+    section .container div h4 {
+        width: 90%;
+        font-size: 100%;
+    }
+
+    section .container {
+        align-items: flex-start;
+    }
+    footer .footer-top div {
+        width: 90%;
+        padding: 20px;
+    }
+
+    footer .footer-top div h3 {
+        margin-bottom: 10px;
+        font-size: 30px;
+        margin-left: 5%;
+    }
+
+    footer .footer-top div h5 {
+        font-size: 20px;
+        margin-left: 5%;
+    }
+    footer .footer-bottom span {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+    }
+    footer .footer-bottom span i{
+        font-size: 45px;
+        border-radius: 10px;
+    }
+}
+
+/* small screens*/
+@media (min-width:786px) {
+
+    nav .left-nav div h1 {
+        font-size: 25px;
+    }
+
+    nav .right-nav ul li a {
+        font-size: 25px;
+    }
+    
+    section .container div h2 {
+        font-size: 200%;
+    }
+
+    .bottom-section {
+        width: 500px;
+    }
+
+    section .container div h4 {
+        width: 90%;
+    }
+
+    section .container {
+        align-items: flex-start;
+    }
+    footer .footer-top div h3 {
+        font-size: 30px;
+        margin-left: 5%;
+    }
+    footer .footer-top div h5 {
+        font-size: 20px;
+        margin-left: 5%;
+    }
+    footer .footer-top div i {
+        font-size: 40px;
+    }
+}
+
+/* medium screens*/
+@media (min-width:992px) {}
+
+/* large screens*/
+@media (min-width:1200px) {}
 
 /* start Feature Page */
 section div a {
@@ -248,13 +379,17 @@ section div h2 {
 section .section-bottom {
     background-color: #ccc;
     width: 100%;
-    /* margin-bottom: 30px; */
 }
 
+section .section-bottom h3 {
+    padding-left: 40px;
+}
 section .section-bottom .container {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
+    width: 60%;
+    margin: 0px auto;
 }
 
 .content {
@@ -321,6 +456,7 @@ section .section-bottom .container {
     display: flex;
     flex-direction: column;
 }
+
 .content .drop {
     border-bottom: 1px solid black;
 }
@@ -369,6 +505,7 @@ section .section-bottom .container {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    z-index: 5;
 }
 
 .dropdown:hover .dropbtn {
@@ -448,7 +585,6 @@ section .section-bottom .container {
 }
 
 .works {
-
     width: 80%;
     margin: 10px auto;
     display: flex;
@@ -634,8 +770,8 @@ iframe {
 }
 
 .blog .container div {
-margin-bottom: 20px;
-margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .blog .container h3 {
@@ -656,6 +792,7 @@ margin-top: 20px;
     margin: 10px auto;
     max-width: 80%;
 }
+
 .blog .container .text button,
 .blog .container .row3-col2 button {
     margin-top: 20px;
@@ -666,6 +803,7 @@ margin-top: 20px;
     font-size: 20px;
     border-radius: 10px;
 }
+
 .blog .container .drop {
     grid-area: drop;
     width: auto;
@@ -699,12 +837,14 @@ margin-top: 20px;
     color: rgba(0, 0, 0, 0.538);
     border-top: 2px solid gray;
 }
+
 .blog .container .row3-col2 {
     border-top: 2px solid gray;
     padding-top: 20px;
     grid-area: row3-col2;
     width: 80%;
 }
+
 .blog .container .row3-col3 {
     grid-area: row3-col3;
     bottom: 150px;
@@ -713,5 +853,4 @@ margin-top: 20px;
     border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
     padding-top: 10%;
-    
 }
