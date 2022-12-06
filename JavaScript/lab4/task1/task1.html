@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 1 </title>
+</head>
+<style>
+    form{
+        width: 350px;
+        height: 600px;
+        margin: 100px auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: rgb(127, 125, 128);
+        border-radius: 5px;
+    }
+    label {
+        text-align: center;
+        font-weight: 300;
+        color: white;
+
+    }
+    input{
+        height: 20px;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .alert {
+        background-color: rgb(231, 96, 96);
+        font-weight: 200;
+        font-size: 15px;
+        color: black;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px;
+        width: 80%;
+        margin: 20px auto;
+        display: none;
+        
+    }
+    .active {
+        display: block;
+    }
+</style>
+<body>
+    <form action="">
+        <label for="name">UseName</label>
+        <input type="text" id ="name" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id ="email"  >
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id ="password" >
+        <br>
+        <label for="cpassword">Confirm Password</label>
+        <input type="password" id ="cpassword" >
+        <br>
+        <select name="city" id="city">
+            <option value="alex">Alexandria</option>
+            <option value="aswan">Aswan</option>
+            <option value="cairo">Cairo</option>
+        </select>
+        <br>
+        <div>
+            <input type="checkbox" id="checkbox">
+            <label for="">I Accept The Condotions</label>
+        </div>
+        <div class="alert"></div>
+        <button onclick="go()">Save</button>
+    </form>
+</body>
+
+<script src="task1.js"></script>
+</html>

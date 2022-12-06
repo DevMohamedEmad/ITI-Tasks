@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        width: 50%;
+        height: 250px;
+        margin: 20px auto;
+        background-color: #ccc;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    form div {
+        font-weight: 300;
+        font-size: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+    button {
+        margin-top: 30px;
+        width: 50%;
+    }
+    label {
+        width: 100px;
+    }
+    input {
+        width: 50%;
+        margin: 10px 0px;
+    }
+</style>
+<body>
+    <form action="">
+        <div>
+            <label for="">Email</label>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <label for="">password</label>
+            <input type="password" name ="password">
+        </div>
+       <button onclick="save()">Save</button>
+       <button onclick="remove()">Remove</button>
+    </form>
+</body>
+<script src="main.js"></script>
+</html>
