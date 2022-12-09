@@ -5,15 +5,27 @@
 
 /////////////////////////////////////////////////////////////////
 
-(numOne*numTwo+numThree == result) ? "x" : "y"
-(numOne*numTwo-numThree == result) ? "x" : "y"
-(numOne+numTwo*numThree == result) ? "x" : "y"
-(numOne+numTwo-numThree == result) ? "x" : "y"
-(numOne-numTwo*numThree == result) ? "x" : "y"
-(numOne-numTwo+numThree == result) ? "x" : "y"
-
-// if(x==1){
-//     console.log("yes")
-// }else{
-//     console.log("no")
-// }
+var x =0;
+if (numOne*numTwo+numThree == result){
+    x=1
+}
+if (numOne*numTwo-numThree == result){
+    x=1
+}
+if (numOne+numTwo*numThree == result){
+    x=1
+}
+if(numOne+numTwo-numThree == result){
+    x=1
+}
+if (numOne-numTwo*numThree == result) {
+    x=1
+}
+if (numOne-numTwo+numThree == result) {
+    x=1
+}
+if(x == 1){
+    console.log("yes")
+}else{
+    console.log("no")
+}
