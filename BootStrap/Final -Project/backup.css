@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,100;1,400;1,500;1,600&display=swap');
+
+body {
+    font-family: 'Playfair Display';
+}
+
+.navbar__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnLogin {
+    color: #FB8F1D;
+    border-color: #FB8F1D;
+}
+
+.btnRegister {
+    background-color: #FB8F1D;
+    color: white;
+}
+
+nav li a:hover {
+    color: black;
+}
+
+.banner_desc {
+    position: relative;
+}
+
+.banner_desc::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+.banner__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+select {
+    min-width: 200px;
+}
+
+@media (max-width:800px) {
+    .banner__contaniner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        width: 120% !important;
+    }
+
+}

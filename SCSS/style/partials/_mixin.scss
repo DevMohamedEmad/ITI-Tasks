@@ -1,0 +1,14 @@
+@mixin display($value) {
+    display: $value;
+}
+@mixin flex($direction , $wrap , $content){
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $content;
+}
+
+@mixin MQ($value){
+    @media (max-width:$value) {
+        @content;
+    }
+}

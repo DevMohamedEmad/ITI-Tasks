@@ -1,0 +1,70 @@
+.banner_desc::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+}
+
+.btnLogin {
+  color: #FB8F1D;
+  border-color: #FB8F1D;
+}
+
+.btnRegister {
+  background-color: #FB8F1D;
+  color: white;
+}
+
+.banner__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 80px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Playfair Display";
+}
+
+nav li a:hover {
+  color: black;
+}
+
+select {
+  min-width: 200px;
+}
+
+.plus {
+  color: #FB8F1D;
+}
+
+i {
+  margin: 2px;
+  font-size: 35px;
+  color: #D7D7D7;
+}
+
+.stars i {
+  color: #FFBB0C;
+}
+
+.card {
+  margin: 10px;
+}
+
+.trending img {
+  max-height: 150px;
+  min-width: 100%;
+  width: 100%;
+}
+
+footer p {
+  color: #848484;
+}/*# sourceMappingURL=main.css.map */

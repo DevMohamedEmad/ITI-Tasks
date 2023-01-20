@@ -1,0 +1,29 @@
+$orangedColor : #FB8F1D;
+
+%underline {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+%loginBtn {   
+    color:$orangedColor;
+    border-color: $orangedColor;
+}
+%registerBtn {   
+    background-color: $orangedColor;
+    color: white;
+}
+
+%section-title{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+}
+%img {
+    display: block;
+    max-width: 100%;
+}

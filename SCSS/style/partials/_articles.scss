@@ -1,0 +1,48 @@
+.title {
+    @extend %title;
+    @extend %center;
+    margin-bottom: 50px
+}
+
+.articles {
+    &__container {
+        @extend %container;
+        @include display(flex);
+        @include flex(column, no-wrap, center);
+    }
+
+    &__cards {
+        @include display(flex);
+        @include flex(row, wrap, space-between);
+    }
+
+    .articele_card {
+        @extend %card;
+
+        @include MQ(786px) {
+            width: 90%;
+            margin: 5px auto;
+        }
+
+        figure {
+            margin: 0;
+            width: 100%;
+        }
+
+        .article__text {
+            margin: 10px;
+        }
+
+        .link {
+            margin: 30px;
+        }
+    }
+}
+
+button {
+    @extend %btn;
+}
+.btn-container {
+    width: 30%;
+    margin: 10px 45%;
+}

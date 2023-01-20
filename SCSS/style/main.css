@@ -1,0 +1,141 @@
+.articles__container, .nav__container {
+  width: 90%;
+  margin: 5px auto;
+  padding: 15px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  border-radius: 10px;
+  background-color: #458FF6;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.title {
+  color: #233348;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto;
+  position: relative;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  width: 50%;
+  height: 5px;
+  left: 30%;
+  background-color: rgb(141, 141, 141);
+  border-radius: 5px;
+}
+
+.articles .articele_card {
+  width: 32%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  box-shadow: -2px 13px 20px 0px rgb(240, 237, 237);
+}
+
+button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 20px auto;
+  padding: 20px;
+  color: #458FF6;
+  background-color: transparent;
+  border-radius: 15px;
+  border: #458FF6 2px solid;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+}
+
+.nav__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+ul li {
+  margin-right: 20px;
+  color: #233348;
+}
+ul li:hover a {
+  color: #233348;
+}
+@media (max-width: 786px) {
+  ul {
+    display: none;
+  }
+}
+
+.circle {
+  display: inline-block;
+}
+
+.title {
+  margin-bottom: 50px;
+}
+
+.articles__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  justify-content: center;
+}
+.articles__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 786px) {
+  .articles .articele_card {
+    width: 90%;
+    margin: 5px auto;
+  }
+}
+.articles .articele_card figure {
+  margin: 0;
+  width: 100%;
+}
+.articles .articele_card .article__text {
+  margin: 10px;
+}
+.articles .articele_card .link {
+  margin: 30px;
+}
+
+.btn-container {
+  width: 30%;
+  margin: 10px 45%;
+}/*# sourceMappingURL=main.css.map */

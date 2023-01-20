@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./jquery-3.6.1.min.js"></script>
+    <title>Learn JQuery</title>
+</head>
+<style>
+
+</style>
+
+<body style="background-color: rgb(202, 201, 201);">
+    <nav>
+        <ul>
+            <li><a href="#selectors">
+                    <h3>Selectors</h3>
+                </a>
+            </li>
+            <li><a href="#show-hide">
+                    <h3>Hide and Show</h3>
+                </a>
+            </li>
+            <li><a href="#faide">
+                    <h3> Fading</h3>
+                </a>
+            </li>
+            <li><a href="#slide">
+                    <h3> Sliding</h3>
+                </a>
+            </li>
+            <li><a href="#animate">
+                    <h3> Animation</h3>
+                </a>
+            </li>
+            <li><a href="#chaining">
+                    <h3> Chaining</h3>
+                </a>
+            </li>
+
+            <li><a href="#chaining">
+                    <h3> Chaining</h3>
+                </a>
+            </li>
+
+            <li>
+                <a href="./add.html">
+                    <h3>Insert -Delete </h3>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="nav">
+        <h2>Learning JQuery</h2>
+        <h1>Do More Write Less</h1>
+    </div>
+    <div class="start">
+        <ul>
+            <li>
+                <h2>jQuery is a JavaScript Library.</h2>
+            </li>
+            <li>
+                <h2>jQuery greatly simplifies JavaScript programming.</h2>
+            </li>
+            <li>
+                <h2>jQuery is easy to learn.</h2>
+            </li>
+        </ul>
+        <img src="./jquery-1-logo.png" style="width: 250px;height: 200px;">
+        <br>
+        <hr>
+        <br>
+        <div>
+            <a href="./home.html"> Start Learning Jquery </a>
+        </div>
+    </div>
+    <div class="selector" id="selectors" style="margin-top:200px ;">
+        <div class="content">
+            <div class="title">
+                <h2>jQuery Selectors</h2>
+            </div>
+            <div class="discription">
+                <ul>
+                    <li>
+                        <h3>jQuery selectors allow you to select and manipulate HTML element(s).</h3>
+                    </li>
+                    <li>
+                        <h3>jQuery selectors are used to "find" (or select) HTML elements based on their name, id,
+                            classes,
+                            types, attributes, values of attributes and much more. It's based on the existing CSS
+                            Selectors,
+                            and in addition, it has some own custom selectors.</h3>
+                    </li>
+                    <li>
+                        <h3>All selectors in jQuery start with the dollar sign and parentheses: $().</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Example</h3>
+            <hr>
+            <h2>When a user clicks on a button, all elements will be hidden:</h2>
+            <div class="example" style="background-color: white;padding: 15px;font-size: 20px;">
+                $(document).ready(<span style="color: blue;"> function()</span> {
+                <br>
+                $(<span style="color: red;">"button"</span>).click((<span style="color: blue;"> function()</span>{
+                <br>
+                $(<span style="color: red;">"p"</span>).hide();
+                <br>
+                });
+                <br>
+                });
+            </div>
+        </div>
+    </div>
+    <div id="show-hide" style="margin-top:50px ;">
+        <div class="content">
+            <div class="title">
+                <h2>jQuery hide() and show()</h2>
+            </div>
+            <div class="discription">
+                <ul>
+                    <li>
+                        <h3>With jQuery, you can hide and show HTML elements with the <span
+                                style="color: red;">hide()</span> and <span style="color: red;">show()</span> methods:
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Example</h3>
+            <hr>
+            <h2>When a user clicks on a button, all elements will be hidden:</h2>
+            <div class="example" style="background-color: white;padding: 15px;font-size: 20px;">
+                $(document).ready(<span style="color: blue;"> function()</span> {
+                <br>
+                <br>
+                $( <span style="color: red;">"#hide"</span> ).click(<span style="color: blue;"> function()</span> {
+                <br>
+                $(<span style="color: red;">"p"</span>).hide();
+                });
+                <br>
+                <br>
+                $(<span style="color: red;">"#show"</span>).click<span style="color: blue;"> function()</span> {
+                <br>
+                $(<span style="color: red;">"p"</span>).show();
+                });
+                <br>
+                });
+                <br>
+                <br>
+            </div>
+            <a href="showHide.html"
+                style="display: inline-block;background-color: rgb(161, 161, 209);color: white;text-decoration: none;padding: 10px;">
+                Try it Yourself</a>
+        </div>
+    </div>
+
+    <div id="faide" style="margin-top:50px ;">
+        <div class="content">
+            <div class="title">
+                <h2>jQuery Effects - Fading</h2>
+                <ul>
+                    <li>
+                        <h3>With jQuery you can fade elements in and out of visibility.</h3>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            <div class="discription">
+                <h3>jQuery Fading Methods</h3>
+                <ul>
+                    <li>
+                        <h4 style="color: red;">fadeIn()</h4>
+                    </li>
+                    <li>
+                        <h4 style="color: red;">fadeOut()</h4>
+                    </li>
+                    <li>
+                        <h4 style="color: red;">fadeToggle()</h4>
+                    </li>
+                    <li>
+                        <h4 style="color: red;">fadeTo()</h4>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Example</h3>
+            <hr>
+            <h2>When a user clicks on a button, all elements will be hidden:</h2>
+            <div class="example" style="background-color: white;padding: 15px;font-size: 20px;">
+                $(document).ready(<span style="color: blue;"> function()</span> {
+                <br>
+                <br>
+                $( <span style="color: red;">"button"</span> ).click(<span style="color: blue;"> function()</span> {
+                <br>
+                $(<span style="color: red;">"#div1"</span>).fadeIn();
+                <br>
+                $(<span style="color: red;">"#div2"</span>).fadeIn("slow");
+                <br>
+                $(<span style="color: red;">"#div3"</span>).fadeIn(3000);
+                });
+                <br>
+                <br>
+                });
+                <br>
+                <br>
+            </div>
+            <a href="faide.html"
+                style="display: inline-block;background-color: rgb(161, 161, 209);color: white;text-decoration: none;padding: 10px;">
+                Try it Yourself</a>
+        </div>
+    </div>
+
+    <div id="slide" style="margin-top:50px ;">
+        <div class="content">
+            <div class="title">
+                <h2>jQuery Effects - Sliding</h2>
+                <ul>
+                    <li>
+                        <h3>The jQuery slide methods slide elements up and down..</h3>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            <div class="discription">
+                <h3>jQuery Sliding Methods</h3>
+                <ul>
+                    <li>
+                        <h4 style="color: red;">slideDown()</h4>
+                    </li>
+                    <li>
+                        <h4 style="color: red;">slideUp()</h4>
+                    </li>
+                    <li>
+                        <h4 style="color: red;">slideToggle()</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Example</h3>
+            <hr>
+            <h2>The following example demonstrates the slideDown() method:</h2>
+            <div class="example" style="background-color: white;padding: 15px;font-size: 20px;">
+                $(document).ready(<span style="color: blue;"> function()</span> {
+                <br>
+                <br>
+                $( <span style="color: red;">"#flip"</span> ).click(<span style="color: blue;"> function()</span> {
+                <br>
+                $(<span style="color: red;">"#div1"</span>).slideDown();
+                <br>
+                });
+                <br>
+                <br>
+                });
+                <br>
+                <br>
+            </div>
+            <hr>
+            <h2>The following example demonstrates the slideUp() method:</h2>
+            <div class="example" style="background-color: white;padding: 15px;font-size: 20px;">
+                $(document).ready(<span style="color: blue;"> function()</span> {
+                <br>
+                <br>
+                $( <span style="color: red;">"#flip"</span> ).click(<span style="color: blue;"> function()</span> {
+                <br>
+                $(<span style="color: red;">"#div1"</span>).slideUp();
+                <br>
+                });
+                <br>
+                <br>
+                });
+                <br>
+                <br>
+            </div>
+            <hr>
+            <h2>The following example demonstrates the slideToggle() method:</h2>
+            <div class="example" style="background-color: white;padding: 15px;font-size: 20px;">
+                $(document).ready(<span style="color: blue;"> function()</span> {
+                <br>
+                <br>
+                $( <span style="color: red;">"#flip"</span> ).click(<span style="color: blue;"> function()</span> {
+                <br>
+                $(<span style="color: red;">"#div1"</span>).slideToggle();
+                <br>
+                });
+                <br>
+                <br>
+                });
+                <br>
+                <br>
+            </div>
+            <a href="slide.html"
+                style="display: inline-block;background-color: rgb(161, 161, 209);color: white;text-decoration: none;padding: 10px;">
+                Try it Yourself</a>
+        </div>
+    </div>
+
+    <div id="animate" style="margin-top:50px ;">
+        <div class="content">
+            <div class="title">
+                <h2>jQuery Animations - The animate() Method</h2>
+                <ul>
+                    <li>
+                        <h3>The jQuery animate() method is used to create custom animations.</h3>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            <div class="discription">
+                <!-- <h3>jQuery Sliding Methods</h3> -->
+                <ul>
+                    <li>
+                        <h4 style="color: red;">The required params parameter defines the CSS properties to be animated.
+                        </h4>
+                    </li>
+                    <li>
+                        <h4 style="color: red;">The optional speed parameter specifies the duration of the effect. It
+                            can take the following values: "slow", "fast", or milliseconds.
+
+                            The optional callback parameter is a function to be executed after the animation completes.
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Example</h3>
+            <hr>
+            <h2>The following example demonstrates a simple use of the animate() method; it moves a <div> element to the
+                    right, until it has reached a left property of 250px:</h2>
+            <div class="example" style="background-color: white;padding: 15px;font-size: 20px;">
+                $(document).ready(<span style="color: blue;"> function()</span> {
+                <br>
+                <br>
+                $( <span style="color: red;">"button"</span> ).click(<span style="color: blue;"> function()</span> {
+                <br>
+                $(<span style="color: red;">"#div1"</span>).animate({left: '250px'});
+                <br>
+                });
+                <br>
+                <br>
+                });
+                <br>
+                <br>
+
+            </div>
+            <a href="animate.html"
+                style="display: inline-block;background-color: rgb(161, 161, 209);color: white;text-decoration: none;padding: 10px;">
+                Try it Yourself</a>
+        </div>
+    </div>
+
+    <div id="stop" style="margin-top:50px ;">
+        <div class="content">
+            <div class="title">
+                <h2>jQuery Stop Animations</h2>
+                <ul>
+                    <li>
+                        <h3>The jQuery stop() method is used to stop animations or effects before it is finished.</h3>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            <div class="discription">
+                <h3>jQuery stop() Method</h3>
+                <ul>
+                    <li>
+                        <h4>The jQuery stop() method is used to stop an animation or effect before it is finished.</h4>
+                    </li>
+                    <li>
+                        <h4>The stop() method works for all jQuery effect functions, including sliding, fading and
+                            custom animations.)</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Example</h3>
+            <hr>
+            <h2>The following example demonstrates the stop() method, with no parameters:</h2>
+            <div class="example" style="background-color: white;padding: 15px;font-size: 20px;">
+                $(document).ready(<span style="color: blue;"> function()</span> {
+                <br>
+                <br>
+                $( <span style="color: red;">"#stop"</span> ).click(<span style="color: blue;"> function()</span> {
+                <br>
+                $(<span style="color: red;">"#panel"</span>).stop();
+                <br>
+                });
+                <br>
+                });
+                <br>
+                <br>
+            </div>
+            <a href="stop.html"
+                style="display: inline-block;background-color: rgb(161, 161, 209);color: white;text-decoration: none;padding: 10px;">
+                Try it Yourself</a>
+        </div>
+    </div>
+    <div id="chaining" style="margin-top:50px ;">
+        <div class="content">
+            <div class="title">
+                <h2>jQuery - Chaining</h2>
+                <ul>
+                    <li>
+                        <h3>With jQuery, you can chain together actions/methods,Chaining allows us to run multiple
+                            jQuery methods (on the same element) within a single statement..</h3>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            <div class="discription">
+                <h3>jQuery Method Chaining</h3>
+                <ul>
+                    <li>
+                        <h4 style="color: red;">Until now we have been writing jQuery statements one at a time (one
+                            after the other).
+                            However, there is a technique called chaining, that allows us to run multiple jQuery
+                            commands, one after the other, on the same element(s).</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Example</h3>
+            <hr>
+            <h2>The following example chains together the css(), slideUp(), and slideDown() methods. The "p1" element
+                first changes to red, then it slides up, and then it slides down:</h2>
+            <div class="example" style="background-color: white;padding: 15px;font-size: 20px;">
+                $(document).ready(<span style="color: blue;"> function()</span> {
+                <br>
+                <br>
+                $( <span style="color: red;">"button"</span> ).click(<span style="color: blue;"> function()</span> {
+                <br>
+                $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+                });
+                <br>
+                <br>
+                });
+                <br>
+                <br>
+            </div>
+            <a href="chaining.html"
+                style="display: inline-block;background-color: rgb(161, 161, 209);color: white;text-decoration: none;padding: 10px;">
+                Try it Yourself</a>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

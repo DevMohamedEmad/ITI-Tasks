@@ -1,0 +1,55 @@
+@import 'partial/mixins';
+@import 'partial/variables';
+
+body {
+    font-family: 'Playfair Display';
+}
+
+.btnLogin{
+ @extend %loginBtn;
+}
+.btnRegister {
+    @extend %registerBtn;
+}
+.banner__title {
+    @extend %section-title;
+}
+
+.banner_desc::after {
+@extend %underline;
+}
+
+nav li a:hover {
+    color: black;
+}
+
+select {
+    min-width: 200px;
+}
+.plus {
+color: $orangedColor;
+}
+i{
+    margin: 2px;
+    font-size: 35px;
+    color: #D7D7D7;
+}
+
+.stars i{
+    color: #FFBB0C;
+}
+img{
+    @extend %img
+}
+.card {
+    margin: 10px;
+}
+
+.trending img {
+    max-height: 150px;
+    min-width:100%;
+    width: 100%;
+}
+footer p { 
+    color: #848484    ;
+}

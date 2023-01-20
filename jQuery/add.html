@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $("#btn2").click(function () {
+        $("ol").append("<li> Pended item </li>");
+      });
+
+      $("#btn22").click(function () {
+        $("ol").prepend("<li>Prepended item</li>");
+      });
+
+      $("#btn24").click(function () {
+        $("img").before("<b>Before</b>");
+      });
+
+      $("#btn25").click(function () {
+        $("img").after("<i>After</i>");
+      });
+      $("#btn3").click(function () {
+        $("#div1").remove();
+      });
+
+      $("#btn4").click(function () {
+        $("#div1").empty();
+      });
+
+    });
+  </script>
+</head>
+
+<style>
+  div{
+    padding: 20px;
+  }
+</style>
+<body>
+  <div>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ol>
+    <button id="btn2">Append list items</button>
+    <button id="btn22">Preppend list items</button>
+    <br>
+    <br>
+    <hr>
+    <div><img src="./album2.jpg" style="width: 200px;height: 200px;margin: 20px;"> </div>
+    <button id="btn24">Added Before </button>
+    <button id="btn25">Added After</button>
+  </div>
+  <br>
+  <br>
+  <hr>
+  <div id="div1" style="height:100px;width:300px;border:1px solid black;">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. ecessitatibus voluptatum. Quibusdam pariatur et
+    consequatur dolores quo distinctio cum cupiditate similique alias assumenda! Harum, iste!
+  </div>
+  <br>
+
+  <button id="btn3">Remove</button>
+  <button id="btn4">Empty</button>
+
+</body>
+
+</html>

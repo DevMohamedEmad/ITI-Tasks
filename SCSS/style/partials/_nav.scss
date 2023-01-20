@@ -1,0 +1,35 @@
+.nav {
+    &__container{
+        @include display(flex);
+        @include flex(row , wrap , space-between);
+        @extend %container;
+        align-items: center;
+    }
+}
+ul {
+    @include display(flex);
+    @include flex(row , no-wrap , space-between);
+    list-style: none;
+    li{
+        margin-right: 20px;
+        color: $main-color;
+        &:hover{
+            a{
+                color: $main-color;
+            }
+        }
+    }
+    @include MQ(786px){
+        display: none
+    }
+
+}
+
+.circle {
+    @extend %circle;
+    @include display(inline-block);
+
+}
+.title {
+  @extend %title  
+}
