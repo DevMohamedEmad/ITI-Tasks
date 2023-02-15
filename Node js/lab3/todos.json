@@ -1,0 +1,5 @@
+[
+    {"name":"todo one","color":"red","price":100},
+    {"name":"todo two","color":"blue","price":200},
+    {"name":"todo three","color":"black","price":300}
+] 
